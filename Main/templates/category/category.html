@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% include 'components/navbar.html' %}
+    <div class="w-full h-auto text-white flex flex-col justify-center items-center">
+        <div class="w-full h-[55vh] flex justify-center items-center">
+            <h1 class="text-4xl uppercase text-center">Products</h1>
+        </div>
+        <div class="w-3/4 flex flex-wrap gap-2 justify-evenly mb-2">
+            {% for product in fooditems %}
+                <a href="/Product/{{ product.id }}" class="border border-white p-2 w-1/4 bg-[#d1d1d1] text-black rounded shadow-2xl">
+                    <img src="{{ product.images.url }}" alt="{{ product.name }}">
+                    <div class="text-center">
+                      <h1 class="font-bold text-2xl">{{ product.name }}</h1>
+                      <h2>{{ product.price }}</h2>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% include 'components/footer.html' %}
+{% endblock content %}

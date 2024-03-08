@@ -1,0 +1,13 @@
+<div class="md:h-[100vh] flex flex-col md:flex-row p-2 justify-evenly items-center w-full text-white">
+    <img src="{{ fooditems.images.url }}" alt="{{fooditems.names}}" class="w-1/2"/>
+    <form method="post" class="flex flex-col gap-2 w-1/2 items-center">
+        {% csrf_token %}
+        <h1>{{fooditems.name}}</h1>
+        <h1>{{fooditems.price}}</h1>
+        <input type="number" name="quantity" class="bg-gray-500 p-2 rounded md:w-1/3" value="1"/>
+        <textarea class="p-2 rounded bg-gray-500" name="useraddress" placeholder="Enter the Address" required></textarea>
+        <button type="submit" class="p-2 bg-blue-700 md:w-1/3">Order<button>
+        <h1>Product Description</h1>
+        <p class="md:w-1/2">{{fooditems.description}}</p>
+    </form>
+</div>

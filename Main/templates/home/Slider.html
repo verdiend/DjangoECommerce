@@ -1,0 +1,12 @@
+{%load static%}
+
+<div class="w-3/4 flex flex-wrap my-2 gap-2 items-center justify-center">
+    {% for categorydata in category %}
+    <a href="Category/{{categorydata.id}}" class="w-1/4 border border-gray-300 flex flex-col items-center rounded">
+        <img src="media/{{categorydata.images}}" height="250px" width="250px" class="p-2"/>
+        <div class="p-2">
+            <h1 class="text-white text-center">{{categorydata.name}}</h1>
+        </div>
+    </a>
+    {% endfor %}
+</div>

@@ -1,0 +1,23 @@
+<div class=" w-full text-white">
+    <div class="w-full h-[50vh] flex justify-center items-center">
+      <h1 class="uppercase text-4xl font-bold">CART</h1>
+    </div>
+    <div class="w-3/4 mx-auto mb-6">
+      {% for order in orders %}
+        {% for order_item in order.orderitem_set.all %}
+          <div class="border border-white p-2 rounded flex items-center justify-between">
+            <img src="{{ order_item.food_item.images.url }}" alt="Image" width="150px"/>
+            <div>
+              <h1>Name : {{ order_item.food_item.name }}</h1>
+              <h1>Quantity: {{ order_item.quantity }}</h1>
+            </div>
+            <div class="">
+              <h1>Price: {{ order_item.price }}</h1>
+              <h1>Status: {{ order.status }}</h1>
+            </div>
+          </div>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+  
