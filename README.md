@@ -25,11 +25,11 @@ For the CSS we use the Tailwindcss
 ```
 
 ## Screenshots
+![InstalledAppChange](https://github.com/verdiend/DjangoECommerce/assets/110904775/bfbb69c4-1faf-400a-88ef-86365d7d2ce2)
+![StaticFiles](https://github.com/verdiend/DjangoECommerce/assets/110904775/6b334c15-f913-4ff9-bfa4-cb856d71bead)
+![TailwindConfig](https://github.com/verdiend/DjangoECommerce/assets/110904775/90e83d10-4ae1-4742-b5b3-dcddb78ed538)
+![PackageJsonChanges](https://github.com/verdiend/DjangoECommerce/assets/110904775/bccb481e-20bd-4dfa-bd1e-1eae7448ad80)
 
-![InstalledAppChanges](https://ibb.co/YknjMCP)
-![ForStaticFiles](https://ibb.co/h17txSG)
-![TailWindConfig](https://ibb.co/MgydWcN)
-![PackageJsonChanges](https://ibb.co/ykLhQtN)
 
 ## Setup Database
 
